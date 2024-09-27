@@ -9,9 +9,7 @@ userList=/root/shells/user.list
 
 cat $userList | while read UNAME UPASS
 do
-    userdel -r "$UNAME" 
-    [ $? -eq 0 ] \
-        && echo "   [ OK  ]  $UNAME 삭제 완료" \
-        || echo "   [ FAILED ] $UNAME 삭제 에러" \
-  
+    echo "$UNAME : $UPASS"
+    useradd "$UNAME"
+    echo "$UPASS" | passwd --stdin "$UNAME"
 done
