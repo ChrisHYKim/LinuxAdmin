@@ -56,3 +56,17 @@ UUID=dd78cb12-3873-4e95-b87c-1440b3ebd7b4 /boot                   xfs     defaul
 # (7) SMB Configuration
 #
 #//192.168.10.202/samba_share     /mnt/server     cifs    credentials=/root/cred                0 0
+
+#
+# (8) disk1.sh configuration
+#
+#UUID=455738f3-e63c-4d4d-bf30-6ca4664b81ce /diskProc xfs defaults 0 2
+
+#
+# (9) disk2.sh disk1 configuration
+#
+#UUID=8f5bc4a6-b903-4aa5-b66d-81f86e34a12d /databases xfs defaults 0 2
+#
+# (10) disk2.sh disk2 configuration
+#
+#UUID=0bd903f5-c3f8-4a11-9fcd-a21d67834a47 /diskProc ext4 defaults 0 2
