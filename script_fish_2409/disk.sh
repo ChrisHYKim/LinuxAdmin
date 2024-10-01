@@ -37,7 +37,7 @@ diskCheckInfo() {
         diskCMD | $fdisk_result
         partprobe $diskCMD
         echo "=======Result Partion======"
-        echo "  파일 포맷 완료  "
+        echo "  디스크 포맷 완료  "
         echo "==========================="
     fi
 }
