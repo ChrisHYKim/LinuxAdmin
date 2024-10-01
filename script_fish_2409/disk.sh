@@ -29,7 +29,7 @@ diskCheckInfo() {
     else 
         # 현재 디스크가 존재하지 않을 때만 포맷 작업을 진행합니다.
         echo "[   FAIL  ] $diskCMD 디스크가 존재하지 않습니다. 새로운 파티션을 생성합니다."
-        fdisk_result=$(fdisk "/dev/sdb1")
+        fdisk_result=$(fdisk /dev/sdb)
         if ! $fdisk_result ; then
             echo "fdisk 실행 에러 $?">&2
         fi
