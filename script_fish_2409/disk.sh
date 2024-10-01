@@ -12,9 +12,9 @@ diskCMD() {
     sleep 1 ; echo 'p\n' >> /dev/null 2>&1 
     sleep 1 ; echo 'n\n' >> /dev/null 2>&1
     sleep 1 ; echo 'p\n' >> /dev/null 2>&1 
-    sleep 1 ; echo '<enter>'  >> /dev/null 2>&1
-    sleep 1 ; echo '<enter>'  >> /dev/null 2>&1
-    sleep 1 ; echo '<enter>'  >> /dev/null 2>&1
+    sleep 1 ; echo '\n'  >> /dev/null 2>&1
+    sleep 1 ; echo '\n'  >> /dev/null 2>&1
+    sleep 1 ; echo '\n'  >> /dev/null 2>&1
     sleep 1 ; echo 'w\n' >> /dev/null 2>&1
 }
 # 디스크 상태 체크
