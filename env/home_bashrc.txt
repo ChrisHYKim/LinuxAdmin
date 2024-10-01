@@ -117,6 +117,8 @@ alias makeshell='/root/shells/makeshell.sh'
 #
 alias modproject1='chmod 700 /root/scripts/project1/*.sh'
 alias modproject2='chmod 700 /root/scripts/project2/*.sh'
+
+
 #
 #   Code Alias
 #
