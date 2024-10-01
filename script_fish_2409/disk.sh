@@ -81,9 +81,7 @@ mountDiskProc() {
         echo "마운트 디렉토리 ($mount_dir) 생성을 완료합니다."
         echo "-------------------------"
     fi
-    4. umount 작업 진행
-    echo "[Part 4 파일 언마운트 진행]"
-    df -hT | boxes -d santa
+    # 4. umount 작업 진행
     if mountpoint -q $mount_dir; then
         umount "$mount_dir"
         if [ $? -eq 0 ]; then 
