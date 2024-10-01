@@ -70,6 +70,7 @@ mountDiskProc() {
             # 주석 해제 명령
             sed -i '63s/^#//' /etc/fstab 
             systemctl "$sysreload"
+            df -hT | boxes -d santa
         else
             sed -i '60,62i\#\n# (8) disk1.sh configuration\n#\nUUID='"$mount_uuid"' '"$mount_dir"' xfs defaults 0 2' /etc/fstab
             systemctl "$sysreload"
